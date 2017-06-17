@@ -42,11 +42,11 @@ html {
 
 .header-nav-link:first-child {
   margin-left: 0;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .header-nav-link:last-child {
-  margin-left: 1rem;
+  margin-left: 2rem;
   margin-right: 0;
 }
 
@@ -75,7 +75,7 @@ margin-top: 4rem;
 .discover-title {
   margin: 0;
   text-align: center;
-  font-family: "FiraSans";
+  font-family: "Fira Sans";
   font-size: 1.5rem;
   font-weight: 700;
   color: #3e4247;
@@ -86,7 +86,10 @@ margin-top: 4rem;
   font-family: "Fira Sans";
   font-size: 1rem;
   font-weight: 400;
+  line-height: 1.5rem;
   color: #3e4247;
+  padding-left: 33.875em;
+  padding-right: 33.875em;
 }
 
 .contact {
@@ -131,12 +134,13 @@ margin-top: 4rem;
 .card-pic {
   width: 30.25rem;
   height: 21.875rem;
+  flex-shrink: 0
 }
 
 .card-content {
   display: flex;
   flex-flow: column;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1rem;
 }
 
 .card-loc {
@@ -160,7 +164,7 @@ margin-top: 4rem;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  margin-top: 0.5rem;
+  margin-top: -2rem;
 }
 
 
@@ -195,6 +199,7 @@ footer {
 
 .footer-credentials {
   margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-credentials:last-child {
