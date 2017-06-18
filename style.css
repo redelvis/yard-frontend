@@ -1,0 +1,234 @@
+body {
+  background: url('./images/background.png');
+  background-size: 1%;
+  background-color: #eaebf0;
+  background-repeat: repeat;
+}
+
+
+html {
+  color: var(#3e4247);
+  font-family: var("Fira Sans");
+}
+
+.header {
+  background: #fff
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  line-height: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav-link {
+  color: #3e4247;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Fira Sans";
+  margin: 0;
+  line-height: 1.0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.header-nav-link:first-child {
+  margin-left: 0;
+  margin-right: 2rem;
+}
+
+.header-nav-link:last-child {
+  margin-left: 2rem;
+  margin-right: 0;
+}
+
+.header-compass-logo {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.compass-development-block {
+  display: flex;
+  background: #161616;
+}
+
+
+.compass-development-logo {
+  width: 26.188rem;
+	height: 8.188rem;
+  margin: 5rem;
+}
+
+.discover {
+margin-top: 4rem;
+}
+
+.discover-title {
+  margin: 0;
+  text-align: center;
+  font-family: "Fira Sans";
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3e4247;
+}
+
+.discover-text {
+  text-align: center;
+  font-family: "Fira Sans";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #3e4247;
+}
+
+.discover-contact {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.discover-button {
+  background-color: #000000;
+  color: #fff;
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-style: none;
+  border-radius: 0.125rem;
+}
+
+.cards {
+  display: flex;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.card-complex {
+  display: flex;
+  background: #fff;
+  text-decoration: none;
+  margin-bottom: 2.5rem;
+  border-bottom: solid 0.125rem #646971;
+}
+
+
+.card:first-child {
+  margin-top: 0;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card-pic {
+  width: 30.25rem;
+  height: 21.875rem;
+  flex-shrink: 0
+}
+
+.card-content {
+  display: flex;
+  flex-flow: column;
+  padding: 1.5rem 1rem;
+}
+
+.card-loc {
+  color: #646971;
+  font-family: Monaco;
+  margin: 0;
+}
+
+.card-title {
+  color: #000;
+  font-family: "Fira Sans";
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin-top: 1.5rem;
+}
+
+.card-info {
+  color: #3E4247;
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: -2rem;
+}
+
+
+.footer-main {
+  background-color: #111;
+}
+
+.footer-grid {
+  padding-top: 2rem;
+  padding-bottom: 1.75rem;
+  background: #111;
+}
+
+.footer-line {
+  height: 0.125rem;
+  border-style: none;
+  background-color: #3e4247;
+  margin: 0;
+}
+
+.footer-title {
+  font-family: "Fira Sans";
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #646971;
+  margin-top: 1rem;
+}
+
+.footer-credentials-title {
+  margin: 0;
+}
+
+.footer-credentials {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-credentials:last-child {
+  margin-top: 1rem;
+}
+
+.footer-link,
+.footer-credentials {
+  display: block;
+  font-family: "Fira Sans";
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+.footer-credentials {
+  color: #a9afb6;
+}
+
+.footer-all-apartment-link {
+  margin-top: 1rem;
+}
+
+.footer-legal {
+  font-family: "Fira Sans";
+  font-weight: 300;
+  font-size: 0.688rem;
+  line-height: 1rem;
+  color: #a9afb6;
+  margin-top: 6rem;
+}
