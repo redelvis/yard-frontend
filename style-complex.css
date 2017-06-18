@@ -3,6 +3,8 @@ body {
   background-size: 1%;
   background-color: #eaebf0;
   background-repeat: repeat;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased;
 }
 
 
