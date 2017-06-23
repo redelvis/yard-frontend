@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Grid} from 'react-flexbox-grid';
-import logo from './img/compass-logo.png';
+import logo from './../public/img/compass-logo.png';
 import {Link} from 'react-router-dom';
 
 const Header = styled.header`

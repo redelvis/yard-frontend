@@ -1,8 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import ArrowImage from './img/combined-shape.png';
-
+import React from "react";
+import styled from "styled-components";
+import { Grid, Row, Col } from "react-flexbox-grid";
+import ArrowImage from "./../public/img/combined-shape.png";
 
 const Footer = styled.footer`
   padding-top: 2rem;
@@ -72,7 +71,7 @@ const Legal = styled.p`
 `;
 
 export default () =>
-  (<Footer>
+  <Footer>
     <Grid>
       <Row>
         <Col lg={2}>
@@ -102,9 +101,12 @@ export default () =>
       <Row>
         <Col lgOffset={4} lg={8}>
           <Legal>
-            Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 ГК РФ. © ООО «Ярд», 2017
+            Любая информация, представленная на данном сайте, носит
+            исключительно информационный характер и ни при каких условиях не
+            является публичной офертой, определяемой положениями статьи 437 ГК
+            РФ. © ООО «Ярд», 2017
           </Legal>
         </Col>
       </Row>
     </Grid>
-  </Footer>);
+  </Footer>;

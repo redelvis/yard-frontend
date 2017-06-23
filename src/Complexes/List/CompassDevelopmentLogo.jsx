@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Row } from 'react-flexbox-grid';
-import CompassDevelopmentLogo from '../../img/compass-development-logo.png';
+import CompassDevelopmentLogo from '../../../public/img/compass-development-logo.png';
 
 const Wrapper = styled.div`
-  discplay:flex;
+  discplay: flex;
   background: #161616;
+  overflow-y: hidden;
+  overflow-x: hidden;
 `;
 
 const CompassLogo = Wrapper.extend`

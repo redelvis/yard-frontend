@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Grid, Col } from 'react-flexbox-grid';
+import { Col } from 'react-flexbox-grid';
 
 
 const Discover = styled.div`
@@ -43,17 +43,15 @@ const Button = styled.button`
 
 export default () =>
   (<Discover>
-    <Grid>
-      <Title>Discover Our New Developments</Title>
-        <Col lgOffset={2} lg={8}>
-          <Text>
-            Compass brings a modern approach to new development marketing and sales. From boutique
-            rental conversions
-            to luxurious ground-up condominiums, browse our portfolio of current offerings.
-          </Text>
-          <Contact>
-            <Button>Contact The Team</Button>
-          </Contact>
-        </Col>
-    </Grid>
-  </Discover>);
+    <Title>Discover Our New Developments</Title>
+      <Col lgOffset={2} lg={8}>
+        <Text>
+          Compass brings a modern approach to new development marketing and sales. From boutique
+          rental conversions
+          to luxurious ground-up condominiums, browse our portfolio of current offerings.
+        </Text>
+        <Contact>
+          <Button>Contact The Team</Button>
+        </Contact>
+      </Col>
+    </Discover>);
