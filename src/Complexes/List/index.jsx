@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import { Grid } from "react-flexbox-grid";
-import BodyClassName from "react-body-classname";
+import React from 'react';
+import styled from 'styled-components';
+import { Grid } from 'react-flexbox-grid';
+import BodyClassName from 'react-body-classname';
 
-import CompassDevelopmentLogo from "./CompassDevelopmentLogo";
-import Discover from "./Discover";
-import Card from "./Card";
+import CompassDevelopmentLogo from './CompassDevelopmentLogo';
+import Discover from './Discover';
+import Card from './Card';
 
 const Cards = styled.div`
   margin: 4rem;
@@ -38,11 +38,7 @@ export default () =>
             Cultural District. The 94 residences ranging from alcove lofts to
             four bedrooms within the 63-story tower are generously proportioned.
           </Card>
-          <Card
-            id={3}
-            location="NOLITA, MANHATTAN"
-            title="152 Elizabeth"
-          >
+          <Card id={3} location="NOLITA, MANHATTAN" title="152 Elizabeth">
             152 Elizabeth is an ultra-luxury condominium building—the first in
             New York City designed by Japanese master architect Tadao Ando.
             Located at the corner of Kenmare and Elizabeth Streets in Nolita,
