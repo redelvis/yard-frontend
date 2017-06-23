@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Card = styled(Link)`
   display: flex;
@@ -57,11 +57,11 @@ const Image = styled.img`
 `;
 
 export default props =>
-  (<Card to={`/complex/${props.id}`}>
+  <Card to={`/complex/${props.id}`}>
     <Image src={`${process.env.PUBLIC_URL}/img/apt_${props.id}.png`} />
     <Content>
-      <Location>{props.loc}</Location>
+      <Location>{props.location}</Location>
       <Title>{props.title}</Title>
-      <Info>{props.info}</Info>
+      <Info>{props.children}</Info>
     </Content>
-  </Card>);
+  </Card>;
