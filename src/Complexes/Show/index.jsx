@@ -10,7 +10,7 @@ import Description from './Description';
 import Infrastracture from './Infrastracture';
 import Offers from './Offers';
 import Area from './Area';
-import Places from './Places';
+import Nearby from './Nearby';
 
 export default () =>
   <BodyClassName className="complex">
@@ -23,6 +23,6 @@ export default () =>
       <Infrastracture />
       <Offers />
       <Area />
-      <Places />
+      <Nearby />
     </div>
   </BodyClassName>;
