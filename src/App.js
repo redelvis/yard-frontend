@@ -6,6 +6,7 @@ import Footer from './Footer.jsx';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Complexes from './Complexes/List/';
+import Complex from './Complexes/Show';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <div className="App">
           <Header />
           <Route exact path="/" component={Complexes} />
+          <Route path="/complex" component={Complex} />
           <Footer />
         </div>
       </Router>
