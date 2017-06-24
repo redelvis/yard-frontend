@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   border-top: 0.063rem solid #e0e0e1;
 `;
 
-const Title = styled.h2`
+const Label = styled.h2`
   margin-top: 0;
   margin-bottom: 1rem;
   font-family: "Philosopher";
@@ -22,7 +22,7 @@ const Title = styled.h2`
   color: #3e4247;
   display: block;
 `;
-const Item = styled.p`
+const Value = styled.p`
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Fira Sans";
@@ -35,36 +35,36 @@ export default () =>
   <Infrastracture>
     <Grid>
       <Wrapper>
-        <Title>
+        <Label>
           Инфраструктура
-        </Title>
+        </Label>
         <Row>
           <Col lg={2}>
-            <Item>Бассейн</Item>
+            <Value>Бассейн</Value>
           </Col>
           <Col lg={2}>
-            <Item>Детский сад</Item>
+            <Value>Детский сад</Value>
           </Col>
           <Col lg={2}>
-            <Item>Частная школа</Item>
+            <Value>Частная школа</Value>
           </Col>
           <Col lg={2}>
-            <Item>Бассейн</Item>
+            <Value>Бассейн</Value>
           </Col>
           <Col lg={2}>
-            <Item>Детский сад</Item>
+            <Value>Детский сад</Value>
           </Col>
           <Col lg={2}>
-            <Item>Частная школа</Item>
+            <Value>Частная школа</Value>
           </Col>
           <Col lg={2}>
-            <Item>Частная школа</Item>
+            <Value>Частная школа</Value>
           </Col>
           <Col lg={2}>
-            <Item>Частная школа</Item>
+            <Value>Частная школа</Value>
           </Col>
           <Col lg={2}>
-            <Item>Частная школа</Item>
+            <Value>Частная школа</Value>
           </Col>
         </Row>
       </Wrapper>
