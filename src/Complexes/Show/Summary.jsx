@@ -33,7 +33,7 @@ const Small = styled.small`
 `;
 
 export default () =>
-  <Grid>
+  (<Grid>
     <Summary>
       <Title>
         950
@@ -55,4 +55,4 @@ export default () =>
       </Title>
     </Summary>
     <Line />
-  </Grid>;
+  </Grid>);

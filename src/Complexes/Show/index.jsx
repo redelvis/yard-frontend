@@ -13,7 +13,7 @@ import Area from './Area';
 import Nearby from './Nearby';
 
 export default () =>
-  <BodyClassName className="complex">
+  (<BodyClassName className="complex">
     <div>
       <ComplexTitle />
       <ImagesScroller />
@@ -25,4 +25,4 @@ export default () =>
       <Area />
       <Nearby />
     </div>
-  </BodyClassName>;
+  </BodyClassName>);

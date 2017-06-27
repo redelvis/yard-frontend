@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { Grid, Row, Col } from "react-flexbox-grid";
-import ArrowImage from "./../public/img/combined-shape.png";
+import React from 'react';
+import styled from 'styled-components';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import ArrowImage from './../public/img/combined-shape.png';
 
 const Footer = styled.footer`
   padding-top: 2rem;
@@ -71,7 +71,7 @@ const Legal = styled.p`
 `;
 
 export default () =>
-  <Footer>
+  (<Footer>
     <Grid>
       <Row>
         <Col lg={2}>
@@ -109,4 +109,4 @@ export default () =>
         </Col>
       </Row>
     </Grid>
-  </Footer>;
+  </Footer>);

@@ -37,7 +37,7 @@ const Button = styled.button`
 `;
 
 export default () =>
-  <ComplexTitle>
+  (<ComplexTitle>
     <Grid>
       <Row>
         <Col lg={6}>
@@ -53,4 +53,4 @@ export default () =>
         </Col>
       </Row>
     </Grid>
-  </ComplexTitle>;
+  </ComplexTitle>);

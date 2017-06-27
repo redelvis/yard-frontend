@@ -12,17 +12,21 @@
     "styled-components": "^2.1.0"
   },
   "devDependencies": {
-    "eslint": "^4.0.0",
+    "eslint": "3.19.0",
     "eslint-config-airbnb": "^15.0.1",
-    "eslint-plugin-import": "^2.6.0",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-react": "^7.1.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "5.0.1",
+    "eslint-plugin-react": "7.0.1",
+    "husky": "^0.14.1",
     "react-scripts": "0.9.x"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepush": "eslint --ext .jsx,.js src/",
+    "precommit": "eslint --ext .jsx,.js src/"
   }
 }
