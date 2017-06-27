@@ -16,7 +16,7 @@ const List = styled.div`
   box-shadow: 0 0 1.875rem 0 rgba(0, 0, 0, 0.5);
 `;
 
-const Place = styled.div`
+const Item = styled.div`
   padding: 1.5rem;
   background-color: white;
   border-bottom: solid 1px #e0e0e1;
@@ -39,7 +39,7 @@ const Distance = styled.p`
 `;
 
 export default () =>
-  <Places>
+  (<Places>
     <Grid>
       <Row>
         <Col lg={6}>
@@ -47,20 +47,20 @@ export default () =>
         </Col>
         <Col lg={6}>
           <List>
-            <Place>
+            <Item>
               <Location>Красный октябрь</Location>
               <Distance>24 минуты, 6 км</Distance>
-            </Place>
-            <Place>
+            </Item>
+            <Item>
               <Location>World class</Location>
               <Distance>2 минуты, 300 м</Distance>
-            </Place>
-            <Place>
+            </Item>
+            <Item>
               <Location>Третьяковская галерея</Location>
               <Distance>14 минут, 4 км</Distance>
-            </Place>
+            </Item>
           </List>
         </Col>
       </Row>
     </Grid>
-  </Places>;
+  </Places>);

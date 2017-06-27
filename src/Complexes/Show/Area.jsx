@@ -40,7 +40,7 @@ const Image = styled.img`
 `;
 
 export default () =>
-  <Area>
+  (<Area>
     <Grid>
       <Row middle="lg">
         <Col lg={6}>
@@ -55,11 +55,8 @@ export default () =>
           </Guide>
         </Col>
         <Col lg={6}>
-          <Image
-            src={`${process.env.PUBLIC_URL}/img/polyanka-photo.png`}
-            alt="Polyanka"
-          />
+          <Image src={`${process.env.PUBLIC_URL}/img/polyanka-photo.png`} alt="Polyanka" />
         </Col>
       </Row>
     </Grid>
-  </Area>;
+  </Area>);

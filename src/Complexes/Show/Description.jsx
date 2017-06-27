@@ -27,7 +27,7 @@ const Text = styled.p`
 `;
 
 export default () =>
-  <Desctiption>
+  (<Desctiption>
     <Grid>
       <Row>
         <Col lg={2}>
@@ -68,4 +68,4 @@ export default () =>
         </Col>
       </Row>
     </Grid>
-  </Desctiption>;
+  </Desctiption>);

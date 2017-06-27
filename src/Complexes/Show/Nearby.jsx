@@ -39,7 +39,7 @@ const Distance = styled.p`
 `;
 
 export default () =>
-  <Places>
+  (<Places>
     <Grid>
       <Row>
         <Col lg={6}>
@@ -63,4 +63,4 @@ export default () =>
         </Col>
       </Row>
     </Grid>
-  </Places>;
+  </Places>);

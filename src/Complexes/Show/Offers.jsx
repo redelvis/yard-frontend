@@ -24,7 +24,7 @@ const Cards = styled.div`
 `;
 
 export default () =>
-  <Offers>
+  (<Offers>
     <Grid>
       <Title>Предложения в ЖК «Полянка/44»</Title>
       <Cards>
@@ -41,4 +41,4 @@ export default () =>
         </Row>
       </Cards>
     </Grid>
-  </Offers>;
+  </Offers>);
