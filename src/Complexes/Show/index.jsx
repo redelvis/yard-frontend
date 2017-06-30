@@ -12,6 +12,18 @@ import Offers from './Offers';
 import Area from './Area';
 import Nearby from './Nearby';
 
+class Show extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  componentDidMount() {
+    return fetch('https://api.jqestate.ru/v1/complexes${this.props.match.params.id}',
+  )
+  .then(complexes => this.setState(complexes));
+
+
 export default () =>
   <BodyClassName className="complex">
     <div>
