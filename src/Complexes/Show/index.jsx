@@ -25,7 +25,7 @@ class Show extends Component {
 
 
 export default () =>
-  <BodyClassName className="complex">
+  (<BodyClassName className="complex">
     <div>
       <ComplexTitle />
       <ImagesScroller />
@@ -37,4 +37,4 @@ export default () =>
       <Area />
       <Nearby />
     </div>
-  </BodyClassName>;
+  </BodyClassName>);

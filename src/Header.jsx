@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import {Grid} from 'react-flexbox-grid';
+import { Grid } from 'react-flexbox-grid';
 import logo from './../public/img/compass-logo.png';
-import {Link} from 'react-router-dom';
 
 const Header = styled.header`
   background: #fff;
@@ -49,9 +49,6 @@ const NavLink = styled(Link)`
     margin-right: 0;
   }
 `;
-
-
-
 
 export default () =>
   (<Header>

@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Col } from 'react-flexbox-grid';
 
-
 const Discover = styled.div`
   margin-top: 4rem;
 `;
@@ -44,14 +43,14 @@ const Button = styled.button`
 export default () =>
   (<Discover>
     <Title>Discover Our New Developments</Title>
-      <Col lgOffset={2} lg={8}>
-        <Text>
-          Compass brings a modern approach to new development marketing and sales. From boutique
-          rental conversions
-          to luxurious ground-up condominiums, browse our portfolio of current offerings.
-        </Text>
-        <Contact>
-          <Button>Contact The Team</Button>
-        </Contact>
-      </Col>
-    </Discover>);
+    <Col lgOffset={2} lg={8}>
+      <Text>
+        Compass brings a modern approach to new development marketing and sales. From boutique
+        rental conversions
+        to luxurious ground-up condominiums, browse our portfolio of current offerings.
+      </Text>
+      <Contact>
+        <Button>Contact The Team</Button>
+      </Contact>
+    </Col>
+  </Discover>);

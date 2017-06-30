@@ -59,6 +59,7 @@ const Image = styled.img`
 export default props =>
   (<Card to={`/complex/${props.id}`}>
     <Image src={props.image} />
+
     <Content>
       <Location>{props.location}</Location>
       <Title>{props.title}</Title>
