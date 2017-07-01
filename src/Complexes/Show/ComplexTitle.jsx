@@ -36,15 +36,22 @@ const Button = styled.button`
   color: #00779a;
 `;
 
-export default () =>
+function formatLocation(location) {
+  const locationBase = [location.subLocalityName, location.street, location.house]
+    .filter(item => !!item)
+    .join(', ');
+
+  if (location.postalCode) return `${locationBase} • ${location.postalCode}`;
+  return locationBase;
+}
+
+export default props =>
   (<ComplexTitle>
     <Grid>
       <Row>
         <Col lg={6}>
-          <Name> Жилой комплекс «Полянка/44»</Name>
-          <Adress>
-            Район Якиманка, улица Большая Полянка, дом 44 • 119180
-          </Adress>
+          <Name>{props.name}</Name>
+          <Adress>{formatLocation(props.location)}</Adress>
         </Col>
         <Col lg={6}>
           <Row end="lg">
