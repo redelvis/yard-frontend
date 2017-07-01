@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Grid } from 'react-flexbox-grid';
+import { getImageUrl } from '../../utils';
 
 const Photos = styled.div`
   display: flex;
@@ -27,29 +28,17 @@ const Button = styled.button`
   color: #fff;
 `;
 
-export default () =>
+export default props =>
   <div>
     <Photos>
-      <Image
-        src={`${process.env.PUBLIC_URL}/img/complex_1.png`}
-        alt="1st image"
-      />
-      <Image
-        src={`${process.env.PUBLIC_URL}/img/complex_2.png`}
-        alt="2nd image"
-      />
-      <Image
-        src={`${process.env.PUBLIC_URL}/img/complex_3.png`}
-        alt="3rd image"
-      />
-      <Image
-        src={`${process.env.PUBLIC_URL}/img/complex_4.png`}
-        alt="4th image"
-      />
-      <Image
-        src={`${process.env.PUBLIC_URL}/img/complex_5.png`}
-        alt="5th image"
-      />
+      {props.images.map(image =>
+        <Image
+          key={image.id}
+          src={getImageUrl(image)}
+          alt="complexImage"
+          title="complexImage"
+        />
+      )}
     </Photos>
     <Grid>
       <Button>41 фотография</Button>

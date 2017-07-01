@@ -38,7 +38,7 @@ const Value = styled.dd`
   color: #3e4247;
 `;
 
-export default () =>
+export default props =>
   <Features>
     <Grid>
       <FeaturesTitle>Характеристики</FeaturesTitle>
@@ -46,7 +46,7 @@ export default () =>
         <Col lg={4}>
           <Block>
             <Label>Количество квартир </Label>
-            <Value>1 503 </Value>
+            <Value>{props.propertiesCount}</Value>
           </Block>
           <Block>
             <Label>Статус </Label>
@@ -60,29 +60,29 @@ export default () =>
         <Col lg={4}>
           <Block>
             <Label>Количество квартир </Label>
-            <Value>1 503 </Value>
+            <Value>{props.propertiesCount}</Value>
           </Block>
           <Block>
             <Label>Количество квартир </Label>
-            <Value>1 503 </Value>
+            <Value>{props.propertiesCount}</Value>
           </Block>
           <Block>
             <Label>Количество квартир </Label>
-            <Value>1 503 </Value>
+            <Value>{props.propertiesCount}</Value>
           </Block>
         </Col>
         <Col lg={4}>
           <Block>
             <Label>Количество квартир </Label>
-            <Value>1 503 </Value>
+            <Value>{props.propertiesCount}</Value>
           </Block>
           <Block>
             <Label>Количество квартир </Label>
-            <Value>1 503 </Value>
+            <Value>{props.propertiesCount}</Value>
           </Block>
           <Block>
             <Label>Количество квартир </Label>
-            <Value>1 503 </Value>
+            <Value>{props.propertiesCount}</Value>
           </Block>
         </Col>
       </Row>

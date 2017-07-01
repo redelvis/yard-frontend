@@ -15,7 +15,7 @@ class App extends Component {
         <div className="App">
           <Header />
           <Route exact path="/" component={Complexes} />
-          <Route path="/complex" component={Complex} />
+          <Route path="/complex/:id" component={Complex} />
           <Footer />
         </div>
       </Router>

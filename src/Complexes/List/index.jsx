@@ -6,6 +6,7 @@ import BodyClassName from 'react-body-classname';
 import CompassDevelopmentLogo from './CompassDevelopmentLogo';
 import Discover from './Discover';
 import Card from './Card';
+import { get } from '../../api';
 
 const Cards = styled.div`
   margin: 4rem;
@@ -24,11 +25,9 @@ class List extends Component {
   }
 
   componentDidMount() {
-    return fetch('https://api.jqestate.ru/v1/complexes?filter[state]=public')
-      .then(response => response.json())
-      .then(({ items: complexes }) => {
-        this.setState({ complexes });
-      });
+    get('/complexes?filter[state]=public').then(({ items: complexes }) => {
+      this.setState({ complexes });
+    });
   }
 
   render() {
@@ -42,13 +41,14 @@ class List extends Component {
           <Cards>
             <Grid>
               {complexes.map(complex =>
-                (<Card
+                <Card
                   key={complex.id}
                   id={complex.id}
                   location={formatLocation(complex.location)}
                   title={`${complex.name}`}
-                  image={`https://images.jqestate.ru/${complex.images[0].id}-jqestate-512`}
-                />),
+                  image={`https://images.jqestate.ru/${complex.images[0]
+                    .id}-jqestate-512`}
+                />
               )}
             </Grid>
           </Cards>
