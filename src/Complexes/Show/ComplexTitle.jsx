@@ -37,11 +37,7 @@ const Button = styled.button`
 `;
 
 function formatLocation(location) {
-  const locationBase = [
-    location.subLocalityName,
-    location.street,
-    location.house
-  ]
+  const locationBase = [location.subLocalityName, location.street, location.house]
     .filter(item => !!item)
     .join(', ');
 
@@ -50,7 +46,7 @@ function formatLocation(location) {
 }
 
 export default props =>
-  <ComplexTitle>
+  (<ComplexTitle>
     <Grid>
       <Row>
         <Col lg={6}>
@@ -64,4 +60,4 @@ export default props =>
         </Col>
       </Row>
     </Grid>
-  </ComplexTitle>;
+  </ComplexTitle>);

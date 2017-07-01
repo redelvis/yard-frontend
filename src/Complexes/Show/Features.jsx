@@ -39,7 +39,7 @@ const Value = styled.dd`
 `;
 
 export default props =>
-  <Features>
+  (<Features>
     <Grid>
       <FeaturesTitle>Характеристики</FeaturesTitle>
       <Row>
@@ -87,4 +87,4 @@ export default props =>
         </Col>
       </Row>
     </Grid>
-  </Features>;
+  </Features>);

@@ -21,22 +21,16 @@ class Show extends Component {
 
   componentDidMount() {
     this.load(this.props.match.params.id);
-    console.log(this.props.match.params.id);
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.match.params.id !== this.props.match.params.id) {
       this.load(nextProps.match.params.id);
     }
-    console.log(nextProps);
   }
 
   load() {
-    get(`/complexes/${this.props.match.params.id}`).then(complex =>
-      this.setState(complex)
-    );
-    console.log(this.props.match.params);
-    console.trace();
+    get(`/complexes/${this.props.match.params.id}`).then(complex => this.setState(complex));
   }
 
   render() {

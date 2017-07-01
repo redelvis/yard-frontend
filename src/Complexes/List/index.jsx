@@ -12,7 +12,6 @@ const Cards = styled.div`
   margin: 4rem;
 `;
 
-
 function formatLocation(location) {
   return [location.subLocalityName, location.street, location.house]
     .filter(item => !!item)
@@ -42,14 +41,13 @@ class List extends Component {
           <Cards>
             <Grid>
               {complexes.map(complex =>
-                <Card
+                (<Card
                   key={complex.id}
                   id={complex.id}
                   location={formatLocation(complex.location)}
                   title={`${complex.name}`}
-                  image={`https://images.jqestate.ru/${complex.images[0]
-                    .id}-jqestate-512`}
-                />
+                  image={`https://images.jqestate.ru/${complex.images[0].id}-jqestate-512`}
+                />),
               )}
             </Grid>
           </Cards>

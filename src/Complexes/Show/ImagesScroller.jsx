@@ -29,18 +29,13 @@ const Button = styled.button`
 `;
 
 export default props =>
-  <div>
+  (<div>
     <Photos>
       {props.images.map(image =>
-        <Image
-          key={image.id}
-          src={getImageUrl(image)}
-          alt="complexImage"
-          title="complexImage"
-        />
+        <Image key={image.id} src={getImageUrl(image)} alt="complexImage" title="complexImage" />,
       )}
     </Photos>
     <Grid>
       <Button>41 фотография</Button>
     </Grid>
-  </div>;
+  </div>);
