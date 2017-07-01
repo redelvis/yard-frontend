@@ -55,7 +55,7 @@ const Button = styled.button`
 `;
 
 export default props =>
-  <Card to={`/complex/${props.id}`}>
+  (<Card to={`/complex/${props.id}`}>
     <Title>{props.title}</Title>
     <Wrapper>
       <Label>Площадь</Label>
@@ -66,4 +66,4 @@ export default props =>
       <Value>от 20.3 до 84.2 млн руб</Value>
     </Wrapper>
     <Button>Посмотреть предложения</Button>
-  </Card>;
+  </Card>);

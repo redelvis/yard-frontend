@@ -32,7 +32,7 @@ const Value = styled.p`
 `;
 
 export default () =>
-  <Infrastracture>
+  (<Infrastracture>
     <Grid>
       <Wrapper>
         <Label>
@@ -69,4 +69,4 @@ export default () =>
         </Row>
       </Wrapper>
     </Grid>
-  </Infrastracture>;
+  </Infrastracture>);

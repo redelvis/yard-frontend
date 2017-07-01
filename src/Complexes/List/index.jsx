@@ -12,6 +12,7 @@ const Cards = styled.div`
   margin: 4rem;
 `;
 
+
 function formatLocation(location) {
   return [location.subLocalityName, location.street, location.house]
     .filter(item => !!item)
