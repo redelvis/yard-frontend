@@ -9,9 +9,9 @@ This is example of React-powered project for a real estate agency. I used React,
 
 # Installation
 
-You'll need a yarn, so be sure to make `yarn install` on the beginning. 
+First things first. You'll need yarn for this project, you can install it with this [instruction](https://yarnpkg.com/lang/en/docs/install/). Also make sure to `yarn install` on the beginning to install all dependencies. 
 
-You can make a production build using `yarn build` and check some data types with `yarn flow`.
+After you can make a production build using `yarn build` and check some data types with `yarn flow`.
 
 
 # Tests
