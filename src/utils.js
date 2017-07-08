@@ -1,6 +1,7 @@
 /* eslint-disable import/prefer-default-export */
+// @flow
 
-export const getImageUrl = (image, size = 512) => {
+export const getImageUrl = (image: Object, size: number = 512) => {
   if (image) {
     return `https://images.jqestate.ru/${image.id}-jqestate-${size}`;
   }

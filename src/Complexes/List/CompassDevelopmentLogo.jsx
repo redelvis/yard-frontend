@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import styled from 'styled-components';
 import { Row } from 'react-flexbox-grid';
@@ -15,7 +17,6 @@ const CompassLogo = Wrapper.extend`
   height: 8.188rem;
   margin: 5rem;
 `;
-
 
 export default () =>
   (<Wrapper>
